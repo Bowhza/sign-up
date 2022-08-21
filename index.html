@@ -28,22 +28,41 @@
                 </section>
                 <section id="sign-up-form">
                     <h2>Let's do this!</h2>
-                    <form action="" method="GET">
-                        <div>
-                            <div>
+                    <form action="" method="GET" id="form">
+                        <div class="form-container">
+                            <div class="element-container">
                                 <label for="first-name">First Name</label>
-                                <input type="text" name="first-name" id="first-name">
+                                <input type="text" name="first-name" id="first-name" required>
+                            </div>
+                            <div class="element-container">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="element-container">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="form-container">
+                            <div class="element-container">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name" id="last-name">
+                                <input type="text" name="last-name" id="last-name" required>
+                            </div>
+                            <div class="element-container">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone-number" required>
+                            </div>
+                            <div class="element-container">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="password" id="confirm-password" required>
                             </div>
                         </div>
                     </form>
-                    
                 </section>
+                    <div id="button-section">
+                        <button id="submit" type="submit" form="form">Create Account</button>
+                        <p>Already have an account? <a href="index.html">Log in</a></p>
+                    </div>
                 <section>
                 </section>
             </div>
