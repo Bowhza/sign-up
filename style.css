@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Condensed', Courier, monospace;
+}
+
+:root {
+    /*Colors*/
+    --steel-blue: #778da9;
+    --steel-blue-opacity: #778da99d;
+    --aquamarine: #9ceaef;
+    --red: #d90429;
+    --eggshell: #e0e1dd;
+    --light-grey: #f0f0f0;
+}
+
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    height: 100vh;
+}
+
+#form-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--eggshell);
+}
+
+#text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#text-section h2 {
+    max-width: 75%;
+    font-size: 1.5rem;
+    margin: 0px 0px 30px 25px;
+}
+
+#image-div {
+    position: relative;
+    background-color: white;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-right: var(--steel-blue) 2px solid;
+}
+
+#image-div p {
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#image-div a {
+    text-decoration: none;
+    color: var(--aquamarine);
+}
+
+#logo-background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--steel-blue-opacity);
+    top: 25%;
+}
+
+#logo-background h1 {
+    font-family: "Norse Bold";
+    font-size: 5rem;
+    color: white;
+    overflow: hidden;
+}
+
+#odin {
+    height: 100px;
+}
+
+#sign-up-form {
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 3px 8px;
+    background-color: var(--light-grey);
+    padding: 15px 20px;
+}
+
+#sign-up-form h2 {
+    margin: 0 0 20px 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75%;
+}
