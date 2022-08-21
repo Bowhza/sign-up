@@ -82,13 +82,13 @@ html, body {
     height: 150px;
     background-color: var(--steel-blue-opacity);
     top: 25%;
+    overflow: hidden;
 }
 
 #logo-background h1 {
     font-family: "Norse Bold";
     font-size: 5rem;
     color: white;
-    overflow: hidden;
 }
 
 #odin {
@@ -124,14 +124,14 @@ form {
     gap: 3px;
 }
 
-input {
+.text-input {
     height: 25px;
     border: 1px solid var(--darker-grey);
     border-radius: 5px;
     max-width: 230px;
 }
 
-input:focus {
+.text-input:focus {
     outline: 1.5px solid var(--steel-blue);
     box-shadow: black 1px 1px 3px;
 }
@@ -166,4 +166,15 @@ input:focus {
 
 #login:hover {
     color: var(--grey);
+}
+
+.error {
+    outline: 1.5px solid var(--red);
+}
+
+#error-text {
+    display: none;
+    margin-top: 0;
+    font-size: 12px;
+    color: var(--red);
 }
