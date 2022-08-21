@@ -158,8 +158,12 @@ input:focus {
     box-shadow: black 1px 1px 3px;
 }
 
-p a {
+#login {
     text-decoration: none;
     font-weight: bold;
     color: var(--steel-blue);
+}
+
+#login:hover {
+    color: var(--grey);
 }
